@@ -4,6 +4,7 @@ import About from "./About.jsx";
 import Home from "./Home.jsx";
 import "./App.css";
 import Conditional from "./Conditional.jsx";
+import SignupPage from "./SignupPage.jsx";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/About" element={<About />} />
         <Route path="/Login" element={<Conditional />} />
+        <Route path="/SignupPage" element={<SignupPage />} />
       </Routes>
     </BrowserRouter>
   );
