@@ -1,13 +1,20 @@
 function Conditional() {
   const IsLoggedIn = false;
 
-  return (
-    <div>
-      <h1>
-        {IsLoggedIn ? "You Have been Signed In" : "Please Retry or Sign In"}
-      </h1>
-    </div>
-  );
+  //  Conditional with if else
+  if (IsLoggedIn === true) {
+    return (
+      <div>
+        <h1>User is Logged In Alright</h1>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <h1>User does not have access to this material</h1>
+      </div>
+    );
+  }
 }
 
 export default Conditional;
